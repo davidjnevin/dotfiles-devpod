@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 !#/bin/bash
 
 echo "Hello, World!" > /tmp/hello
 
 echo "set -s vi" >> ~/.bashrc
-=======
-echo "Hello, world!" > /tmp/hello
-
-echo "set -o vi" >> ~/.bashrc
->>>>>>> 4082d40fdbe7acec1f736842e5bc1653527687ba
