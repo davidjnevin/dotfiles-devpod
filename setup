@@ -5,7 +5,7 @@ set -euo pipefail  # Correct error handling
 # If chezmoi isn't available then install it.
 
 if ! command -v chezmoi >/dev/null; then
-    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:davidjnevin/dotfiles-dotfiles-devpod.git
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:davidjnevin/dotfiles-devpod.git
 fi
 
 exit 0
