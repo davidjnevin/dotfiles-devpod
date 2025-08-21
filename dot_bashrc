@@ -159,3 +159,4 @@ fi
 # David's additions
 
 set -o vi
+eval "$(mise activate bash)"
