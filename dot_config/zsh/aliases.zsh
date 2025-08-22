@@ -25,11 +25,11 @@ if command -v bat > /dev/null ; then
   alias cat="bat"
 fi
 
-# # lsd
-# if command -v lsd > /dev/null ; then
-#   alias ls="lsd"
-#   alias ll="ls -lgh"
-#   alias la='ls -lathr'
-#   alias lla='ls -lgha'
-#   alias lt='ls --tree'
-# fi
+# lsd
+if command -v lsd > /dev/null ; then
+  alias ls="lsd"
+  alias ll="ls -lgh"
+  alias la='ls -lathr'
+  alias lla='ls -lgha'
+  alias lt='ls --tree'
+fi
