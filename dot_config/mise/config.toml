@@ -6,3 +6,6 @@ fd = "latest"
 fzf = "latest"
 lsd = "latest"
 lazygit = "latest"
+neovim = "latest"
+node = "latest"
+
