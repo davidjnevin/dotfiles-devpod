@@ -2,14 +2,7 @@
 
 set -euo pipefail
 
-if [ ! -d "$HOME/.zsh" ]; then
-  mkdir -p "$HOME/.zsh"
-fi
-
-# Check if pure is already installed
-if [ ! -d "$HOME/.zsh/pure" ]; then
-  git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
-fi
+XDG_CONFIG_HOME="$HOME/.config"
 
 if command -v zsh>/dev/null; then
   sudo chsh -s $(command -v zsh) $USER
@@ -19,5 +12,13 @@ if ! command -v chezmoi >/dev/null; then
     sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:davidjnevin/dotfiles-devpod.git
 fi
 
+if [ ! -d "$HOME/.zsh" ]; then
+  mkdir -p "$HOME/.zsh"
+fi
+
+# Check if pure is already installed
+if [ ! -d "$HOME/.zsh/pure" ]; then
+  git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
+fi
 
 exit 0
