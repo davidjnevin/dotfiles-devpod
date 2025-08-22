@@ -1,4 +1,8 @@
 [tools]
 bat = "latest"
-lsd = "latest"
 chezmoi = "latest"
+ripgrep = "latest"
+fd = "latest"
+fzf = "latest"
+lsd = "latest"
+lazygit = "latest"
